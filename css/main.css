@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --violet: rgb(170, 92, 219);
+    --violet-bg: rgba(170, 92, 219, 0.6); 
+
+   --main-heading-stats: hsl(0, 0%, 100%);
+   --main-paragraph:hsla(0, 0%, 100%, 0.75);
+   --stat-headings:hsla(0, 0%, 100%, 0.6);
+}
+h1,h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+p{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-background);
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-box{
+    width: 80%;
+    height: auto;   
+    display: flex;
+    background-color: var(--card-background);
+    border-radius: 5px;
+    gap: 30px;    
+}
+.card-text{
+    flex: 1;
+    padding-top: 70px;
+    padding-left: 70px;   
+}
+.card-text h1{
+    font-size: 35px;
+    line-height: 35px;
+    color: var(--main-heading-stats);
+    margin-bottom: 40px;
+}
+.card-text h1 span{
+    color: var(--violet);
+}
+.card-text p{
+    font-size: 15px;
+    line-height: 32px;
+    color: var(--main-paragraph);    
+    margin-bottom: 40px;
+}
+.card-text-nums{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 60px;
+}
+.card-text-nums .num h2{
+    color: var(--main-heading-stats);
+}
+.card-text-nums .num p{
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.card-img{
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+.card-img-bg{
+    position: absolute;
+    inset: 0;
+    background-color: var(--violet-bg);
+    border-radius: 0 10px 10px 0;
+}
+.card-img img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0 10px 10px 0;
+}
